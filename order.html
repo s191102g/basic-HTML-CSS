@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="ctn">
+        <header>
+            <div class="logo">
+                <img src="img/noodle-house-logo.jpg" alt="">
+            </div>
+
+            <nav>
+                <i class="fas fa-bars" id="menu-respon" onclick="checkMenu()"></i>
+                <i class="far fa-window-close" id="menu-close" onclick="closeMenu()"></i>
+                <aside class="menu">
+                    <ul>
+                        <li><a href="index.html" class="home">Trang Chủ</a></li>
+                        <hr>
+                        <li><a href="#about" class="about-us">Giới Thiệu</a></li>
+                        <hr>
+                        <li><a href="menu.html" class="menu-sc">Menu</a></li>
+                        <hr>
+                        <li><a href="#" class="bk">Đặt món online</a></li>
+                        <hr>
+                        <li><a href="contact.html" class="ct">Liên hệ</a></li>
+                    </ul>
+                </aside>
+                <div class="rv">
+                    <a href="#book-now">
+                        <p>Đặt món tại nhà hàng</p>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main">
+                <div class="name-page">
+                    <h2>ĐẶT MÓN ONLINE</h2>
+                </div>
+                <div class="area-od">
+                    <div class="left">
+                        <div class="chose">
+                            <p>CHỌN LOẠI</p>
+                        </div>
+                        <div class="soup" >
+                            <p>SOUPS</p>
+                        </div>
+                        <div class="noodle" >
+                            <p>NOODLES</p>
+                        </div>
+                        <div class="dumpling" >
+                            <p>DUMPLINGS</p>
+                        </div>
+
+                    </div>
+                    <div class="betwen">
+                        <div class="top">
+                            <div class="top-name">
+                                <p>SOUPS</p>
+                            </div>
+
+                        </div>
+                        <div class="list1">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/soup/1.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                   <p id="name1">Soups Gà</p> <button onclick="add(1)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/soup/2.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name2">Soups Bò</p> <span>20.000</span><button onclick="add(2)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list2">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/soup/3.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name3">Soups Cua</p> <button onclick="add(3)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/soup/4.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name4">Soups Bào Ngư</p> <button onclick="add(4)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CLOSE SOUPS -->
+
+                    <div class="betwen2">
+                        <div class="top">
+                            <div class="top-name">
+                                <p>NOODLES</p>
+                            </div>
+
+                        </div>
+                        <div class="list1">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/noodle/1.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name5">Phở Gà</p> <button onclick="add(5)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/noodle/2.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name6">Phở Bò</p> <button onclick="add(6)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list2">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/noodle/3.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name7">Bún bò Huế</p> <button onclick="add(7)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/noodle/4.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name8">Bún Chả</p> <button onclick="add(8)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CLOSE NOODLE -->
+                    <div class="betwen3">
+                        <div class="top">
+                            <div class="top-name">
+                                <p>DUMPLINGS</p>
+                            </div>
+
+                        </div>
+                        <div class="list1">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/dumpling/1.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name9">Bánh Chiên</p> <button onclick="add(9)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/dumpling/2.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name10">Bánh Chay</p> <button onclick="add(10)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list2">
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/dumpling/3.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name11">Bánh Trứng Cá</p> <button onclick="add(11)">Add</button>
+                                </div>
+                            </div>
+                            <div class="prd">
+                                <div class="img">
+                                    <img src="img/dumpling/4.jpg" alt="">
+                                </div>
+                                <div class="prd-name">
+                                    <p id="name12">Bánh Kim Sa</p> <button onclick="add(12)">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- close dumpling  -->
+                    <div class="right">
+                        <div class="list-prd">
+                            <div class="list-top">
+                                <span>Các Món Đã Đặt</span>
+                            </div>
+                            <ul class="list-main" id="items"></ul>
+                        </div>
+                        <div class="total">
+                            <span>Tổng tiền:</span> <span>VNĐ</span>
+                        </div>
+                        <div class="od-now">
+                            <button>Đặt Ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="img-logo">
+                <img src="img/ft1.png" alt="">
+            </div>
+            <div class="address">
+                <h2 id="contact">ADDRESS</h2>
+                <p>48/1 Dương Thị Mười, Tân Chánh Hiệp <br>Quận 12, TPHCM</p>
+            </div>
+            <div class="opening-hours">
+                <h2>OPENING HOURS</h2>
+                <P>Mon - Fri: 11am - 10pm <br>
+                    ​​Sat - Sun: 11am - 12am</P>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <P>123-456-7890 <br> sangdeptrai@abc.com</P>
+            </div>
+            <div class="follow">
+                <h2>FOLLOW US</h2>
+                <a href=""><img src="img/fl3.png" alt=""></a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

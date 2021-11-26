@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="ctn">
+       <header>
+           <div class="logo">
+                <img src="img/noodle-house-logo.jpg" alt="">
+           </div>
+           
+           <nav>
+            <i class="fas fa-bars" id="menu-respon" onclick="checkMenu()"></i>
+            <i class="far fa-window-close" id="menu-close" onclick="closeMenu()"></i>
+               <aside class="menu">
+                   <ul>
+                       <li><a href="#" class="home">Trang Chủ</a></li> <hr>
+                       <li><a href="#about" class="about-us">Giới Thiệu</a></li> <hr>
+                       <li><a href="menu.html" class="menu-sc">Menu</a></li> <hr>
+                       <li><a href="order.html" class="bk">Đặt món online</a></li> <hr>
+                       <li><a href="contact.html" class="ct">Liên hệ</a></li>
+                   </ul>
+               </aside>
+               <div class="rv">
+                  <a href="#book-now"><p >Đặt món tại nhà hàng</p></a> 
+               </div>
+           </nav>
+           <div class="sup">
+            <p><strong>Taste of the East </strong><br>
+                Tan Chanh Hiep's Most Acclaimed Asian Restaurant</p>
+           </div>
+           <div class="menu-food">
+               <div class="menu-food-main">
+                   <div class="food-soups">
+                       <h2 id="menu-sc">SOUPS</h2>
+                       <p style="margin-left: 10px;margin-right: 10px; color: #ADBABA; text-align: center;">Soup gà là một món ăn hấp dẫn, bổ dưỡng với mọi người trong gia đình… Món ăn này được chế biến với nhiều nguyên liệu. </p>
+                   </div>
+                   <div class="food-noodle">
+                        <h2>NOODLES</h2>
+                        <p style="margin-left: 10px;margin-right: 10px; color: #ADBABA; text-align: center;">Phở là một món ăn truyền thống của Việt Nam. Phở thường là phở bò, nhưng cũng có phở gà, phở heo, phở tôm</p>
+                   </div>
+                   <div class="food-dumplings">
+                        <h2>DUMPLINGS</h2>
+                        <p style="margin-left: 10px;margin-right: 10px; color: #ADBABA; text-align: center;">Nếu bạn là một người sành ăn thì quán Bánh Bao CQS đích thực là một địa điểm không thể bỏ qua. Vỏ bánh được cuộn không quá dày, cũng không quá mỏng, nhân mềm, mịn, thơm ngon.</p>
+                   </div>
+               </div>
+               <div class="menu-food-bottom">
+               <button> <a href="menu.html">XEM NGAY</a></button>
+                  <!-- <button>XEM NGAY</button> -->
+               </div>
+           </div>
+       </header>
+       <main>
+           <div id="box-about">
+            <div class="box-left"></div>
+            <div class="box-right">
+                <h2 id="about">Câu chuyện về chúng tôi có được từ việc <br>phục vụ bữa ăn của bạn</h2>
+                <p style="color: thistle;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repudiandae veniam similique quaerat harum inventore omnis quia. Saepe aut, soluta, adipisci cumque quam placeat ipsa modi? Consequuntur commodi voluptatum, illum est accusamus impedit? Dolorum, quibusdam. Ex, itaque ducimus ab cumque iste molestiae cum similique minima provident porro neque, reiciendis a iusto necessitatibus aliquid voluptatum consequuntur? Iure voluptates aspernatur repudiandae quos est pariatur, voluptatum dolores possimus consequuntur doloremque a! Accusantium labore harum officiis. Ducimus nostrum reiciendis ex aperiam ipsum. Architecto dicta tempore impedit autem numquam facere ab blanditiis, modi eius ut possimus amet, expedita eum. Officia consequuntur nihil tempore similique consequatur incidunt quaerat vel dicta! Libero eos dolorem dolore, harum odit adipisci, rem neque dolores, veniam qui nobis natus repellat ipsa sapiente ipsam quas rerum fuga. Laudantium nihil optio vero voluptatum, dolore fugit voluptatem, ea porro eveniet, excepturi repudiandae facilis tenetur. Atque, ipsa nesciunt qui ratione et aperiam fuga exercitationem delectus id quam voluptas incidunt voluptatum dicta natus. Voluptatibus eveniet mollitia velit animi ab fugiat aut quasi asperiores minus! Vel doloremque voluptas, sint aliquam assumenda dolore. Maiores assumenda, quo laboriosam obcaecati quis maxime officiis odio perferendis similique temporibus fuga autem dolore repellat ipsum!
+                </p>
+            </div>
+           </div>
+           
+           <div class="our-chef">
+               <p>"Nếu không ăn uống tử tế, <br> người ta làm sao mà suy nghĩ, <br> yêu đương <br> và nghỉ ngơi tử tế được"<br> </p> 
+               <span style="padding-left: 40px;color: white;font-size: 20px;">- Virginia Woolf</span>
+           </div>
+
+           <div class="reservation">
+               <div class="title">
+                <h2 id="book-now">Đặt lịch tại Quán</h2>
+               </div>
+              <div class="booking">
+                  <div class="date" >
+                    <label for="date">Ngày</label> <br>
+                    <input type="date" name="DATE" id="date" >
+                  </div>
+                 <div class="time">
+                     <label for="time">Thời Gian</label> <br>
+                     <input type="time" name="" id="time" >
+                 </div>
+                  <div class="people">
+                      <label for="people">Số Người</label> <br>
+                      <select name="" id="people" >
+                        <option value="0">1 Người</option>
+                        <option value="1">2 Người</option>
+                        <option value="2">3 Người</option>
+                        <option value="3">4 Người</option>
+                        <option value="4">5 Người</option>
+                    </select>
+                  </div>
+                  <div id="bt" >
+                      <button> Đặt Ngay</button>
+                  </div>
+                  <div class="success"></div>
+                
+              </div>
+           </div>
+       </main>
+       <footer>
+           <div class="img-logo">
+               <img src="img/ft1.png" alt="">
+           </div>
+           <div class="address">
+               <h2 id="contact" >ADDRESS</h2>
+               <p>48/1 Dương Thị Mười, Tân Chánh Hiệp <br>Quận 12, TPHCM</p>
+           </div>
+           <div class="opening-hours">
+               <h2 >OPENING HOURS</h2>
+               <P>Mon - Fri: 11am - 10pm <br>
+                ​​Sat - Sun: 11am - 12am</P>
+           </div>
+           <div class="contact">
+               <h2 >CONTACT</h2>
+               <P>123-456-7890 <br> sangdeptrai@abc.com</P>
+           </div>
+           <div class="follow">
+               <h2 >FOLLOW US</h2>
+               <a href=""><img src="img/fl3.png" alt=""></a>
+           </div>
+       </footer>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
